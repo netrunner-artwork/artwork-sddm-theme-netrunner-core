@@ -65,12 +65,13 @@ Rectangle {
                     width: parent.width
                     spacing: 4
                     Text {
-                        color: "#5f5f5f"
+                        color: "#FAFAFA"
                         id: lblName
                         width: parent.width
                         text: textConstants.userName
-                        font.bold: true
-                        font.pixelSize: 12
+                        font.family: "Noto Sans"
+                        font.pointSize: 10
+                        font.weight: Font.Bold
                     }
 
                     TextBox {
@@ -78,6 +79,9 @@ Rectangle {
                         width: parent.width; height: 30
                         text: userModel.lastUser
                         font.pixelSize: 14
+                        radius: 2
+                        color: "#BDBDBD"
+                        borderColor: "#BDBDBD"
 
                         KeyNavigation.backtab: rebootButton; KeyNavigation.tab: password
 
@@ -94,18 +98,23 @@ Rectangle {
                     width: parent.width
                     spacing : 4
                     Text {
-                        color: "#5f5f5f"
+                        color: "#FAFAFA"
                         id: lblPassword
                         width: parent.width
                         text: textConstants.password
-                        font.bold: true
-                        font.pixelSize: 12
+                        font.family: "Noto Sans"
+                        font.pointSize: 10
+                        font.weight: Font.Bold
                     }
 
                     PasswordBox {
                         id: password
                         width: parent.width; height: 30
                         font.pixelSize: 14
+                        radius: 2
+                        color: "#BDBDBD"
+                        borderColor: "#BDBDBD"
+                        
                         focus: true
                         Timer {
                             interval: 200
@@ -136,7 +145,7 @@ Rectangle {
                         anchors.bottom: parent.bottom
 
                         Text {
-                            color: "#5f5f5f"
+                            color: "#FAFAFA"
                             id: lblSession
                             width: parent.width
                             text: textConstants.session
@@ -147,14 +156,19 @@ Rectangle {
 
                         ComboBox {
                             id: session
-                            color: "#5f5f5f"
+                            color: "#FAFAFA"
+                            borderColor: "#FAFAFA"
                             width: parent.width; height: 30
                             font.pixelSize: 14
 
-                            arrowIcon: "angle-down.png"
+                            arrowIcon: "angle-down.svg"
 
                             model: sessionModel
                             index: sessionModel.lastIndex
+                            
+                            font.family: "Noto Sans"
+                            font.pointSize: 10
+                            font.weight: Font.ExtraLight
 
                             KeyNavigation.backtab: password; KeyNavigation.tab: layoutBox
                         }
@@ -167,7 +181,7 @@ Rectangle {
                         anchors.bottom: parent.bottom
 
                         Text {
-                            color: "#5f5f5f"
+                            color: "#FAFAFA"
                             id: lblLayout
                             width: parent.width
                             text: textConstants.layout
@@ -178,10 +192,12 @@ Rectangle {
 
                         LayoutBox {
                             id: layoutBox
+                            color: "#FAFAFA"
+                            borderColor: "#FAFAFA"
                             width: parent.width; height: 30
                             font.pixelSize: 14
 
-                            arrowIcon: "angle-down.png"
+                            arrowIcon: "angle-down.svg"
 
                             KeyNavigation.backtab: session; KeyNavigation.tab: loginButton
                         }
