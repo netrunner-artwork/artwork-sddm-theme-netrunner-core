@@ -1,0 +1,13 @@
+Source: artwork-sddm-netrunner-core
+Section: unknown
+Priority: optional
+Maintainer: Rohan Garg <rohan@kde.org>
+Build-Depends: debhelper (>=9)
+Standards-Version: 3.9.8
+Homepage: https://github.com/netrunner-artwork/artwork-sddm-netrunner-core
+
+Package: artwork-sddm-netrunner-core
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: sddm theme for Netrunner Core
+ SDDM theme for Netrunner Core
