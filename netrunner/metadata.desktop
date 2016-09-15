@@ -1,11 +1,11 @@
 [SddmGreeterTheme]
-Name=Netrunner Core
-Description=Netrunner Core Theme
+Name=Netrunner Neo
+Description=Netrunner Neo Theme
 Author=Uri Herrera
 License=CC-BY-SA
 Type=sddm-theme
 Version=0.1
-Website=https://github.com/netrunner/netrunner-sddm-theme
+Website=
 Screenshot=preview.png
 MainScript=Main.qml
 ConfigFile=theme.conf
